@@ -1,0 +1,184 @@
+.container{
+  width: 100%;
+  display: block;
+  padding: 10px 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.search_box .search_box, input{
+  width: 190px;
+  height: 30px;
+  font-size: 16pt;
+  display: block;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.photo_area{
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.row{
+  flex-direction: column;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.row img{
+  display: flex;
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.fancybox-caption__body{
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+a .data-caption {
+  font-size: 60px;
+}
+
+figcaption {
+  display: none;
+}
+
+/*--- media query for Tablet ---*/
+
+@media (min-width: 769px) and (max-width: 1023px) {
+
+  .container {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0;
+  }
+
+  .search_box .search_box, input{
+    width: 240px;
+    font-size: 16pt;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+  }
+
+  .photo_area{
+    width: 95%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .row figure{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .row img{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px;
+    margin-top: 10px;
+  }
+
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
+
+/*--- media query for desktop ---*/
+
+@media (min-width: 1024px) {
+
+  .container{
+    width: 97%;
+    display: block;
+    padding: 10px 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .photo_area{
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .row{
+    width: 52%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .row figure{
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .row img{
+    /* display: flex; */
+    width: 200px;
+    height: 200px;
+    padding: 10px 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .search_box, .search_box input{
+    width: 48%;
+    font-size: 16pt;
+    display: block;
+    padding: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+  .clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+}
